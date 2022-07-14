@@ -18,10 +18,21 @@ figure img{
     background-color: hsl(0, 0%, 100%);
     grid-template-columns: repeat(2, 1fr);
     border-radius: 10px;
-    margin: 20vh  0;
+    margin: 20vh auto 0;
     margin-left: 350px;
     margin-right: 300px;
-    
+}
+.headerwrapper{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.sectionwrapper{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+.price{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
 }
 h1{
     font-family: 'Fraunces', serif;
@@ -30,19 +41,51 @@ h1{
     font-family: 'Fraunces', serif;
     font-weight: 700;
     line-height: 30px;
+    margin-top: -25px;
 }
 h5{
     color: hsl(228, 12%, 48%);
     letter-spacing: 4px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-    
+    grid-row-start: 1;
+    height: 30px;
+    margin: auto 0px;
 }
 .paragraph{
     font-size: 14px;
     color: hsl(228, 12%, 48%);
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    margin-top: -6px;
 }
+.currentprice{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+    margin-top: 5px;
+}
+.oldprice{
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: hsl(228, 12%, 48%);
+}
+button{
+    width: 250px;
+    height: 40px;
+    border-radius: 8px;
+    background-color: hsl(158, 36%, 37%);
+    color: hsl(0, 0%, 100%);
+    border-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-top: -25px;
+    
+}
+
+
 
 
