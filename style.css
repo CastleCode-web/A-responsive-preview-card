@@ -1,4 +1,4 @@
-*{
+/**{
     box-sizing: border-box;
 }
 body{
@@ -83,9 +83,118 @@ button{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin-top: -25px;
+}
+button:hover{
+    background-color: hsl(158, 64%, 15%);
+}*/
+@media screen and (max-width: 375px){
+    *{
+        box-sizing: border-box;
+    }
+    body{
+        background-color: hsl(30, 38%, 92%);
+    }
+    figure img{
+        width: 21.2rem;
+        height: 16rem;
+        border-radius: 10px 10px 0px 0px;
+        margin-right: -20px;  
+        margin-left: -60px; 
+        margin-top: -19px;
+        margin-bottom: -21px;
+        
+    }
+    .container{
+        background-color: hsl(0, 0%, 100%);
+        width: 21.2rem;
+        height: 48rem;
+        padding: 1.25rem;
+        padding-top: 0.2rem;
+        margin: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .headerwrapper{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    h5{
+        color: hsl(228, 12%, 48%);
+        letter-spacing: 4px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
+        grid-row-start: 1;
+        font-size: 14px;
+        height: 30px;
+        margin-top: -85px;
+        
+    }
+    h1{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        color: hsl(212, 21%, 14%);
+        font-weight: 700;
+        line-height: 35px;
+        margin-top: -70px;
+    }
+    .sectionwrapper{
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .item{
+        margin-right: 30px;
+        height: 20rem
+    }
+    .paragraph{
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        margin-top: -4px;
+        line-height: 1.8em;
+        
+    }
+    .price{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .currentprice{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 35px;
+        color: hsl(158, 36%, 37%);
+        margin-top: 30px;
+    }
+    .oldprice{
+        text-decoration: line-through;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 14px;
+        color: hsl(228, 12%, 48%);
+        margin-top: 43px;
+        margin-left: 15px;
+    }
+    button{
+        width: 18rem;
+        height: 3.5rem;
+        border-radius: 10px;
+        background-color: hsl(158, 36%, 37%);
+        color: hsl(0, 0%, 100%);
+        border-style: none;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 500;
+        font-size: 18px;
+        margin-top: 20px;
+    }
+    button:active{
+        background-color: hsl(158, 64%, 15%)
+    }
+}
+@media screen and (max-width: 1440px){
     
 }
-
 
 
 
