@@ -1,27 +1,49 @@
-/**{
+/* Desktop Responsive Development. */
+
+/* This is my first responsive web development, and I found out late that the good approach is mobile-first approach,
+but as I can't start deleting and re-writing codes, I'm sitting with this mistake, but promise never to repeat it */
+*{
     box-sizing: border-box;
 }
 body{
     background-color: hsl(30, 38%, 92%);
 }
+/* I wanted to use the below commented-out code to centralize the 
+entire element but noticed that it's not responsive with the mobile-design */ 
+/*html{
+    display: table;
+    margin: auto;
+}
+body{
+    display: table-cell;
+    vertical-align: middle;
+}*/
 figure img{
-    width: 250px;
-    height: 374px; 
+    width: 16rem;
+    height: 23rem; 
     border-radius: 10px 0px 0px 10px;
     margin-right: -20px;  
     margin-left: -40px; 
     margin-top: -16px;
     margin-bottom: -21px;
 }
+/* Mobile image not needed yet */
+.mobile{
+    display: none;
+}
+/* Over-all grid container */
 .container{
+    height: 23rem;
+    width: 34rem;
     display: grid;
     background-color: hsl(0, 0%, 100%);
     grid-template-columns: repeat(2, 1fr);
+    margin: 20vh auto 0px;
     border-radius: 10px;
-    margin: 20vh auto 0;
     margin-left: 350px;
     margin-right: 300px;
 }
+/* Grid-items used as container in their respective sections */
 .headerwrapper{
     display: grid;
     grid-template-rows: repeat(2, 1fr);
@@ -86,15 +108,21 @@ button{
 }
 button:hover{
     background-color: hsl(158, 64%, 15%);
-}*/
-@media screen and (max-width: 375px){
-    *{
-        box-sizing: border-box;
-    }
+    cursor: pointer;
+}
+
+
+  /* Attempted mobile design */
+
+@media only screen and (max-width: 375px){
     body{
         background-color: hsl(30, 38%, 92%);
     }
-    figure img{
+    *{
+        box-sizing: border-box;
+    }
+    .mobile{
+        display: inline-block;
         width: 21.2rem;
         height: 16rem;
         border-radius: 10px 10px 0px 0px;
@@ -102,7 +130,10 @@ button:hover{
         margin-left: -60px; 
         margin-top: -19px;
         margin-bottom: -21px;
-        
+    }
+    /* Mobile image not needed yet */
+    figure .desktop{
+        display: none;
     }
     .container{
         background-color: hsl(0, 0%, 100%);
@@ -115,85 +146,57 @@ button:hover{
         border-radius: 10px;
         display: grid;
         grid-template-rows: repeat(2, 1fr);
+        align-content: center;
     }
     .headerwrapper{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
     h5{
-        color: hsl(228, 12%, 48%);
-        letter-spacing: 4px;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 700;
         grid-row-start: 1;
-        font-size: 14px;
+        font-size: 16px;
         height: 30px;
-        margin-top: -85px;
-        
+        margin-top: -2.5rem;
+    }
+    div .item{
+        margin-top: 20rem;
+        margin-left: -21rem;
+        padding: 0.2rem;
     }
     h1{
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
-        color: hsl(212, 21%, 14%);
-        font-weight: 700;
         line-height: 35px;
-        margin-top: -70px;
+        margin-top: -45px;
+        font-size: 33px;
     }
     .sectionwrapper{
         display: grid;
         grid-template-rows: repeat(2, 1fr);
     }
-    .item{
-        margin-right: 30px;
-        height: 20rem
-    }
     .paragraph{
-        font-size: 14px;
-        color: hsl(228, 12%, 48%);
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
-        margin-top: -4px;
-        line-height: 1.8em;
-        
+        font-size: 16px;
+        margin-top: 4px;
+        line-height: 1.7em;
     }
     .price{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     }
     .currentprice{
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
         font-size: 35px;
-        color: hsl(158, 36%, 37%);
-        margin-top: 30px;
+        margin-top: 40px;
     }
     .oldprice{
-        text-decoration: line-through;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
         font-size: 14px;
-        color: hsl(228, 12%, 48%);
-        margin-top: 43px;
-        margin-left: 15px;
+        margin-top: 52px;
+        margin-left: 4px;
     }
     button{
         width: 18rem;
-        height: 3.5rem;
+        height: 3.8rem;
         border-radius: 10px;
-        background-color: hsl(158, 36%, 37%);
-        color: hsl(0, 0%, 100%);
-        border-style: none;
-        font-family: 'Montserrat', sans-serif;
-        font-weight: 500;
         font-size: 18px;
-        margin-top: 20px;
+        margin-bottom: 15px;
     }
-    button:active{
-        background-color: hsl(158, 64%, 15%)
-    }
-}
-@media screen and (max-width: 1440px){
-    
 }
 
 
