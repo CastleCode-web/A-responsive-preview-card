@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.png)
+./screenshot.png
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/CastleCode-web/A-responsive-preview-card)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: (https://github.com/CastleCode-web/A-responsive-preview-card)
+- Live Site URL: (https://castlecode-web.github.io/A-responsive-preview-card/)
 
 ## My process
 
