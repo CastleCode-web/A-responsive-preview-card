@@ -79,5 +79,5 @@ I want to perfect my learning on the Grid layout system. I also want to expand m
 
 - Frontend Mentor - [@Feyisara2306](https://www.frontendmentor.io/profile/Feyisara2306)
 - Twitter - [@CastleCode_web](https://twitter.com/CastleCode_web)
--Linkdln -  [@castlecode](https://www.linkedin.com/in/castlecode/)
+- Linkdln -  [@castlecode](https://www.linkedin.com/in/castlecode/)
 
